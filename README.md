@@ -11,7 +11,6 @@
   <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python">
   <img src="https://img.shields.io/badge/AI-CS50AI-red?style=for-the-badge">
   <img src="https://img.shields.io/badge/Focus-Learning-green?style=for-the-badge">
-  <img src="https://img.shields.io/github/stars/IfBilal/cs50ai-problem-sets?style=for-the-badge">
 </p>
 
 <p align="center">
