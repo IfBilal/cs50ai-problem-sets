@@ -1,5 +1,5 @@
 # 🤖 CS50 AI: Artificial Intelligence with Python
-> **An Engineering deep-dive into Logic, Probability, and Neural Networks.**
+> **From Search Heuristics to Transformer-based Attention Mechanisms.**
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
@@ -9,52 +9,44 @@
 ---
 
 ## 📌 Overview
-This repository documents my implementation of Harvard's **CS50 Introduction to Artificial Intelligence**. Developed entirely on **Ubuntu Linux**, these projects transition from classical search heuristics to modern deep learning and natural language processing.
+This repository documents my implementations of the **Harvard CS50 AI** curriculum. Developed and tested on **Ubuntu Linux**, these projects cover the full spectrum of AI—from classical search and logical inference to deep learning and modern **Natural Language Processing (NLP)**.
 
 ---
 
-## 🏛️ Project Roadmap & Technical Breakdown
+## 🏛️ Technical Roadmap
 
-### 🔎 0. Search & Heuristics
-* **Degrees:** BFS implementation to find shortest paths in large social graphs.
-* **Tic-Tac-Toe:** Unbeatable adversarial AI using **Minimax with Alpha-Beta Pruning**.
+### 🔎 0. Search & Logic
+* **Degrees:** Shortest pathfinding in actor social graphs using **BFS**.
+* **Tic-Tac-Toe:** Unbeatable AI using **Minimax with Alpha-Beta Pruning**.
+* **Minesweeper:** A knowledge-based agent performing **Logical Inference** to clear cells safely.
 
-### 🧠 1. Knowledge Representation
-* **Knights & Knaves:** Solving logical puzzles via **Propositional Logic** and model checking.
-* **Minesweeper:** A knowledge-based agent that performs **Inference** to make safe moves under constraints.
+### 🎲 1. Uncertainty & Optimization
+* **PageRank:** Markov Chain Monte Carlo (MCMC) sampling for webpage importance.
+* **Heredity:** Probabilistic inference in **Bayesian Networks**.
+* **Crossword:** Solving crosswords as a **Constraint Satisfaction Problem (CSP)** using **AC-3 (Arc Consistency)**.
 
-### 🎲 2. Uncertainty & Probability
-* **PageRank:** Ranking web pages using **Markov Chain Monte Carlo** sampling and iterative algebraic methods.
-* **Heredity:** Probabilistic inference in **Bayesian Networks** to model genetic trait inheritance.
+### 📈 2. Learning & Neural Networks
+* **Shopping:** **k-Nearest Neighbor (k-NN)** classification for consumer behavior.
+* **Nim:** Mastering gameplay through **Reinforcement Learning (Q-Learning)**.
+* **Traffic:** A **Convolutional Neural Network (CNN)** built with TensorFlow to classify road signs from images.
 
-### ⚙️ 3. Optimization
-* **Crossword:** Solving crosswords as a **Constraint Satisfaction Problem (CSP)** using **AC-3 (Arc Consistency)** and backtracking search.
-
-### 📈 4. Machine Learning
-* **Shopping:** A **k-Nearest Neighbor (k-NN)** classifier predicting consumer behavior with focus on sensitivity/specificity metrics.
-* **Nim:** An AI that masters gameplay through **Reinforcement Learning** (Q-Learning).
-
-### 🖼️ 5. Neural Networks
-* **Traffic:** A **Convolutional Neural Network (CNN)** built with **TensorFlow** to classify 43 road sign categories. 
-    * *Architecture:* 2D Convolution, Max-Pooling, Flattening, and Dropout for regularization.
-
-### 🗣️ 6. Language (NLP)
-* **Parser:** A Natural Language Processor that parses sentences and extracts noun phrases using **Context-Free Grammar (CFG)**.
-* **Questions:** An AI that answers questions by performing **TF-IDF (Term Frequency-Inverse Document Frequency)** ranking and document retrieval.
+### 🗣️ 3. Natural Language Processing (NLP)
+* **Parser:** A syntactic analyzer that extracts noun phrases using **Context-Free Grammar (CFG)** and the `nltk` library.
+* **Attention:** A deep-dive into the **Transformer Architecture**. This project implements an AI that masks words in a sentence and uses **Attention Weights** to predict the missing words, visualizing how the model "attends" to different parts of the input.
 
 ---
 
-## 🐧 Ubuntu / Linux Setup
-Optimized for **Ubuntu 22.04/24.04 LTS**.
+## 🐧 Ubuntu / Linux Environment
+Optimized for **Ubuntu 22.04/24.04 LTS** on **Lenovo V14 Hardware**.
 
-### 🛠️ Environment Configuration
+### 🛠️ System Configuration
 ```bash
-# Update system and install Python pip
-sudo apt update && sudo apt install python3-pip -y
+# Ensure your Ubuntu environment is up to date
+sudo apt update && sudo apt install python3-pip python3-venv -y
 
-# Clone the repo
+# Clone the repo and enter directory
 git clone [https://github.com/IfBilal06/cs50ai-problem-sets.git](https://github.com/IfBilal06/cs50ai-problem-sets.git)
 cd cs50ai-problem-sets
 
-# Install requirements (TensorFlow, NLTK, OpenCV, etc.)
+# Install dependencies (NLTK, TensorFlow, etc.)
 pip install -r requirements.txt
